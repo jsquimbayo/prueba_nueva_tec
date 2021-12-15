@@ -157,7 +157,7 @@ public class ProductServicesImpl implements IProductServices {
             }else{
                 return new ResponseEntity<>(GenericResponseDTO.builder()
                         .message("No se pudo eliminar la tarea")
-                        .objectResponse(codeTask)
+                        .objectResponse(codProduct)
                         .statusCode(HttpStatus.OK.value())
                         .build(), HttpStatus.OK);
             }
